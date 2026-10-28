@@ -95,7 +95,6 @@ Query: {{customer_query}}
 Model/tool used: ChatGPT
 Testing method: manual. The prompt was pasted once, followed by the 9 given
 examples, and then the test queries were submitted together in one chat.
-Result: 40/40 correct (100% on this test set)
 
 | # | Query | Expected | Output | Pass |
 |---|---|---|---|---|
