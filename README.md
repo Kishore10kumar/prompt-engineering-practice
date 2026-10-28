@@ -91,10 +91,9 @@ Query: {{customer_query}}
 - The test set is small (41 queries) and written by the author, so 100% here does not guarantee 100% on real customer data.
 
 ## Test Results
-
-Model/tool used: ChatGPT
-Testing method: manual. The prompt was pasted once, followed by the 9 given
-examples, and then the test queries were submitted together in one chat.
+- **Model/tool used:** ChatGPT
+- **Testing method:** manual. The prompt and the 9 given examples were pasted once, then all test queries were submitted together in one chat.
+- **Result:** 41/41 correct (100% on this test set)
 
 | # | Query | Expected | Output | Pass |
 |---|---|---|---|---|
