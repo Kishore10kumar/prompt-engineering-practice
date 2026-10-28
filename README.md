@@ -82,10 +82,13 @@ Query: {{customer_query}}
 2. Replace `{{customer_query}}` on the last line with the customer query.
 3. The model replies with exactly one category word.
 
-## Test Results
-- **Model/tool used:** ChatGPT
-- **Testing method:** manual. The prompt and the 9 given examples were pasted once, then all test queries were submitted together in one chat.
-- **Result:** 41/41 correct (100% on this test set)
+## Limitations
+- No prompt can guarantee 100% accuracy; genuinely ambiguous queries
+  (e.g. "I returned it but didn't get my money") may be classified either way.
+- Results depend on the model and settings used.
+- Queries were tested in one batch, so earlier queries may have influenced later answers.
+- Queries mixing several issues are classified by their primary intent only.
+- The test set is small (41 queries) and written by the author, so 100% here does not guarantee 100% on real customer data.
 
 ## Test Results
 
