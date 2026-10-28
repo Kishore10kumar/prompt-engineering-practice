@@ -139,3 +139,21 @@ Query: {{customer_query}}
 - Queries mixing several issues are classified by their primary intent only.
 - The test set is small (41 queries) and written by the author, so 100% here does not guarantee 100% on real customer data.
 
+## Additional Tests (Unseen Queries)
+These 10 queries were not used while designing the prompt. They cover misspellings,
+Hinglish, capital letters, mixed issues and non-order topics.
+
+Result: 10/10 correct
+
+| # | Query | Expected | Output | Pass |
+|---|---|---|---|---|
+| 1 | ordr not recieved since 10 days | Delivery | Delivery | ✅ |
+| 2 | PLEASE CANCEL MY ORDER NOW!!! | Cancellation | Cancellation | ✅ |
+| 3 | Paisa kat gaya lekin order nahi bana | Payment | Payment | ✅ |
+| 4 | The seal was broken and the bottle is leaking | Defect | Defect | ✅ |
+| 5 | Can you recommend a good phone under 20000? | Unknown | Unknown | ✅ |
+| 6 | I returned the item last week but still no money | Refund | Refund | ✅ |
+| 7 | The reset password link is not working | Account | Account | ✅ |
+| 8 | My parcel shows out for delivery but nobody came | Delivery | Delivery | ✅ |
+| 9 | ??? | Unknown | Unknown | ✅ |
+| 10 | I got the wrong size, please send a replacement | Return | Return | ✅ |
